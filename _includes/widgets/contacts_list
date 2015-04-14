@@ -1,0 +1,9 @@
+<a href="#"><i class="icon-fixed-width icon-heart"></i> 与我联系</a>
+<div id="contacts-list">
+  <a href="mailto:xuhf_1988@163.com" target="_blank" title="Mail">
+    <i class="icon-large icon-fixed-width icon-envelope"></i>
+  </a>
+  <a href="https://github.com/xuhf" target="_blank" title="Github">
+    <i class="icon-large icon-fixed-width icon-github"></i>
+  </a>
+</div>
