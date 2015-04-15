@@ -37,7 +37,7 @@ MyBatis Generator (MBG) 是一个Mybatis的代码生成器 MyBatis 和 iBATIS. �
     <!-- mysql -->
     <jdbcConnection driverClass="com.mysql.jdbc.Driver"
       connectionURL="jdbc:mysql://localhost:3306/mybatis?characterEncoding=utf8"
-      userId="root" password="880819">
+      userId="root" password="password">
     </jdbcConnection>
 
     <javaTypeResolver>
@@ -45,39 +45,28 @@ MyBatis Generator (MBG) 是一个Mybatis的代码生成器 MyBatis 和 iBATIS. �
     </javaTypeResolver>
 
     <!-- PO -->
-    <javaModelGenerator targetPackage="com.youku.payment.core.po"
+    <javaModelGenerator targetPackage="test.po"
       targetProject="src/main/java">
       <property name="enableSubPackages" value="true" />
       <property name="trimStrings" value="true" />
     </javaModelGenerator>
 
     <!-- xml -->
-    <sqlMapGenerator targetPackage="com.youku.payment.core.dao"
+    <sqlMapGenerator targetPackage="test.dao"
       targetProject="src/main/resources">
       <property name="enableSubPackages" value="true" />
     </sqlMapGenerator>
 
     <!-- DAO -->
     <javaClientGenerator type="XMLMAPPER"
-      targetPackage="com.youku.payment.core.dao" targetProject="src/main/java">
+      targetPackage="test.dao" targetProject="src/main/java">
       <property name="enableSubPackages" value="true" />
     </javaClientGenerator>
 
     <!-- table -->
-    <table tableName="payment_user" schema="public"
-      domainObjectName="User" />
-    <table tableName="payment_batch" schema="public"
-      domainObjectName="Batch" />
-    <table tableName="payment_batch_history" schema="public"
-      domainObjectName="BatchHistory" />
-    <table tableName="payment_alipay_to_alipay" schema="public"
-      domainObjectName="AlipayToAlipay" />
-    <table tableName="payment_alipay_to_alipay_history" schema="public"
-      domainObjectName="AlipayToAlipayHistory" />
-    <table tableName="payment_alipay_to_bank" schema="public"
-      domainObjectName="AlipayToBank" />
-    <table tableName="payment_alipay_to_bank_history" schema="public"
-      domainObjectName="AlipayToBankHistory" />
+    <!-- 这需要注意,将你需要自动生成的表都列在这里 -->
+    <table tableName="test" schema="public"
+      domainObjectName="Test" />
 
   </context>
 
