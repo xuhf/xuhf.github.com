@@ -1,7 +1,7 @@
 ---
 title : SpringMVC-Controller中使用JSON格式数据入参
 layout : post
-category : springmvc json
+category : springmvc,json
 ---
 
 ## 需求
