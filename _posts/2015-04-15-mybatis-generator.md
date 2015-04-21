@@ -1,7 +1,8 @@
 ---
-title : MybatisGenerator的使用
 layout : post
-category : mybatis
+title : "MybatisGenerator的使用"
+category : "java"
+tags : [mybatis]
 ---
 
 ## 简介

@@ -1,7 +1,9 @@
 ---
-title : Spring4与Quartz2 实现任务的定时调度
 layout : post
-category : [spring,quartz]
+title : "Spring4与Quartz2 实现任务的定时调度"
+description: "spring4集成quartz实现任务的定时调度"
+category : "java"
+tags : ["spring","quartz"]
 ---
 
 ## 需求
@@ -102,4 +104,4 @@ Spring4.0.2 + quartz2.2.1
 
 ## 参考
 
-[http://ju.outofmemory.cn/entry/108512](http://ju.outofmemory.cn/entry/108512)
+<http://ju.outofmemory.cn/entry/108512>
