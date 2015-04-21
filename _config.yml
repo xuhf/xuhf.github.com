@@ -92,17 +92,6 @@ JB :
     provider : duoshuo
     duoshuo :
       short_name : xuhf
-    disqus :
-      short_name : xuhf
-    livefyre :
-      site_id : 123
-    intensedebate :
-      account : 123abc
-    facebook :
-      appid : 123
-      num_posts: 5
-      width: 580
-      colorscheme: light
 
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
@@ -112,12 +101,6 @@ JB :
     provider : baidu
     baidu :
       tracking_id : 'e6b22fb4d84f7d170fe849ee97b59ab7'
-    google :
-      tracking_id : 'UA-52647797-1'
-    getclicky :
-      site_id :
-    mixpanel :
-      token : '_MIXPANEL_TOKEN_'
 
   # Settings for sharing helper.
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.
