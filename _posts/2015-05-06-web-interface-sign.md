@@ -7,6 +7,8 @@ tags : [签名, 接口]
 
 ## 背景
 
+在进行接口开发时，需要对数据的安全性有一定的要求，尤其是在接口暴露在公网之下，为了防止传输时参数被篡改，我们使用签名sign的方式提高安全性。
+
 ## 接口参数签名sign
 
 最初接触这种方式是在淘宝的支付宝接口上，淘宝的支付宝接口都采用的是这种方式，使用合作商户的key对参数进行签名。
@@ -31,7 +33,7 @@ tags : [签名, 接口]
 
 ## Java代码实现
 
-1. 首先构建参数的Map
+### 首先构建参数的Map
 
 ```java
 Map<String, String> map = new HashMap<String, String>();
@@ -41,7 +43,7 @@ map.put("site", "http://www.xuhaifei.cn");
 map.put("facebook", null);
 ```
 
-2. 剔除空值和不参加签名的参数
+### 剔除空值和不参加签名的参数
 
 ```java
 public static Map<String, String> filter(Map<String, String> parameters) {
@@ -61,7 +63,7 @@ public static Map<String, String> filter(Map<String, String> parameters) {
 }
 ```
 
-3. 对参加签名的参数按照字母升序排序并拼接字符串
+### 对参加签名的参数按照字母升序排序并拼接字符串
 
 ```java
 public static String buildLinkString(Map<String, String> filterParameters) {
@@ -81,7 +83,7 @@ public static String buildLinkString(Map<String, String> filterParameters) {
 }
 ```
 
-4. 使用生成的字符串 和 key 生成签名
+### 使用生成的字符串 和 key 生成签名
 
 在获得byte数组时，可以指定字符编码，也可以不指定，
 
