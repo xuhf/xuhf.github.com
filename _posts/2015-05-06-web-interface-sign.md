@@ -181,4 +181,9 @@ public class SignDemo {
 }
 ```
 
+## 参考文章
+
+<http://www.oicto.com/web-api-sign-key-a/>
+<http://www.oicto.com/web-api-sign-key-b/>
+
 
