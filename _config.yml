@@ -15,12 +15,12 @@ redcarpet:
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : xuhf's blog
+title : Laputa's blog
 tagline: to be continue.
 author :
-  name : xuhf
+  name : Laputa
   email : xuhf_1988@163.com
-  github : xuhf
+  github : xuhf_1988
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
