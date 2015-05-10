@@ -3,7 +3,6 @@ layout : post
 title : "[数据结构笔记]线性表（二）"
 category : "数据结构"
 tags : [数据结构, 算法]
-published: false
 ---
 
 ## 回顾
@@ -22,10 +21,26 @@ published: false
 
 ## 循环链表
 
+将单链表中终端结点的指针由空指针改为指向头结点，就使整个链表形成一个环，
 
+这种头尾想接的单链表称为单循环链表，简称循环链表。
 
 ## 双向链表
 
+双链表是在单链表的每个结点中，再设置一个指向其前驱结点的指针域。
 
+双链表的数据结构
+
+```java
+public class DulNode {
+  Object data;
+  DulNode prior;
+  DulNode next;
+}
+```
 
 ## 总结
+
+在2篇文章中，我们学习了线性表这种数据结构，以及它的两种实现方式
+
+结合java中的ArrayList和LinkedList两个类，可以让我们更好的理解线性表这种数据结构。
