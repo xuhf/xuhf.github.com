@@ -3,7 +3,7 @@ layout : post
 title : "[数据结构笔记]队列-循环队列"
 category : "数据结构"
 keywords : 循环队列, java实现
-tags : [数据结构, 算法]
+tags : [数据结构]
 ---
 
 ## 前言

@@ -2,7 +2,7 @@
 layout : post
 title : "[数据结构笔记]线性表（二）"
 category : "数据结构"
-tags : [数据结构, 算法]
+tags : [数据结构]
 ---
 
 ## 回顾

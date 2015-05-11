@@ -2,7 +2,7 @@
 layout : post
 title : "[数据结构笔记]算法"
 category : "数据结构"
-tags : [数据结构, 算法]
+tags : [数据结构]
 ---
 
 ## 算法的定义
