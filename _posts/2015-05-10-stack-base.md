@@ -138,3 +138,32 @@ public class LinkedStack {
 }
 ```
 
+## 栈的应用
+
+### 递归
+
+递归的定义：把一个直接调用自己或者通过一系列的调用语句间接调用自己的函数，称为递归函数。
+
+每个递归定义必须至少有一个条件，满足时递归不再进行，即不能引用自身而是返回值退出。
+
+借用书上的小例子:
+
+如果兔子在出生2个月后，就有繁殖能力，一对兔子每个月能生出一对小兔子，
+
+假设所有兔子不死，那么两年后可以繁殖多少对兔子。
+
+```java
+public static void fbi() {
+  int month = 24;
+  for (int i = 1; i <= month; i++) {
+    System.out.println(fbi(i));
+  }
+}
+
+private static int fbi(final int i) {
+  if (i < 2) {
+    return i == 0 ? 0 : 1;
+  }
+  return fbi(i - 1) + fbi(i - 2);
+}
+```
