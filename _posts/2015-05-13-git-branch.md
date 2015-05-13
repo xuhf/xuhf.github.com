@@ -6,11 +6,13 @@ keywords : git,develop,branch
 tags : [git]
 ---
 
-## Git分支管理是一门艺术
+## Git分支管理
 
 在Git流行的今天，如果你还在使用CVS/SVN。那你就真的是out了。
 
 借用在一个文章上看到的标题：**Git分支管理是一门艺术**
+
+一个成功的 Git 分支模型
 
 原文链接：<a href="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank">http://nvie.com/posts/a-successful-git-branching-model/</a>
 
@@ -20,11 +22,11 @@ tags : [git]
 
 ## 版本控制
 
-语义话的版本控制规范 <a href="http://semver.org/lang/zh-CN/" target="_blank">http://semver.org/lang/zh-CN/</a>
+语义话的版本控制规范：<a href="http://semver.org/lang/zh-CN/" target="_blank">http://semver.org/lang/zh-CN/</a>
 
 ## 实例
 
-有幸在github上看到了百度EFE团队的写的**git分支管理规范**
+有幸在github上看到了百度EFE团队的写的 **git分支管理规范**
 
 <a href="https://github.com/ecomfe/edp/issues/283" target="_blank">https://github.com/ecomfe/edp/issues/283</a>
 
