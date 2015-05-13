@@ -1,5 +1,5 @@
 <form id="search-form">
-  <input id="query" type="text" placeholder="正则搜索"></input>
+  <input id="query" type="text" placeholder="这是一个神奇的通道"></input>
   <button type="submit"><i class="icon-search"></i></button>
 </form>
 <script type="text/javascript">
@@ -52,12 +52,13 @@ $(document).ready(function() {
   function findEntries(q) {
     var matches = [];
     var rq = new RegExp(q, 'im');
-    var rl = /^http:\/\/xuhaifei\.cn\/post\/(.+)\.html$/;
+    var rl = /^http:\/\/www\.xuhaifei\.cn\/(.+)\/(.+)\.html$/;
     for (var i = 0; i < entries.length; i++) {
       var entry = entries[i];
       var title = $(entry.getElementsByTagName('title')[0]).text();
       var link = $(entry.getElementsByTagName('link')[0]).attr('href');
-      var title_en = rl.exec(link)[1].replace(/-/g, ' ');
+      // var title_en = rl.exec(link)[1].replace(/-/g, ' ');
+      var title_en = link.substring(link.lastIndexOf('/')+1,link.lastIndexOf('.'));
       var content = $(entry.getElementsByTagName('content')[0]).text();
       if (rq.test(title) || rq.test(title_en) || rq.test(content)) {
         var updated = formatDate(xmlDateToJavascriptDate($(entry.getElementsByTagName('updated')[0]).text()));
@@ -72,6 +73,9 @@ $(document).ready(function() {
       html += '<section><p>' + htmlEscape(match.content) + '</p></section>';
       html += '<footer><p>更新日期：' + match.date + '</p></footer>';
       html += '</article>';
+    }
+    if (matches.length == 0) {
+      html += '<section><p>对不起，未找到关键字对应文章</p></section>'
     }
     $('#main-content').html(html);
     $('#loader').hide();
