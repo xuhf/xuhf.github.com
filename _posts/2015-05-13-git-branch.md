@@ -4,7 +4,6 @@ title : "Git分支管理"
 category : "Git"
 keywords : git,develop,branch
 tags : [git]
-published: false
 ---
 
 ## Git分支管理是一门艺术
@@ -28,3 +27,7 @@ published: false
 有幸在github上看到了百度EFE团队的写的**git分支管理规范**
 
 <a href="https://github.com/ecomfe/edp/issues/283" target="_blank">https://github.com/ecomfe/edp/issues/283</a>
+
+## 最后
+
+我们走得更高，是因为我们站在这些巨人的肩膀上，向他们致敬。
