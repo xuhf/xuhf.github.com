@@ -75,7 +75,7 @@ $(document).ready(function() {
       html += '</article>';
     }
     if (matches.length == 0) {
-      html += '<section><p>对不起，未找到关键字对应文章</p></section>'
+      html = '<section><p>对不起，未找到关键字对应文章</p></section>'
     }
     $('#main-content').html(html);
     $('#loader').hide();
