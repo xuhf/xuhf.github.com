@@ -18,7 +18,7 @@ redcarpet:
 title : 三胖子的个人博客
 tagline: to be continue.
 author :
-  name : Laputa
+  name : vvkee
   email : xuhf_1988@163.com
   github : xuhf_1988
 
@@ -30,8 +30,8 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://www.xuhaifei.cn
-cdn_url : http://www.xuhaifei.cn
+production_url : http://www.vvkee.com
+cdn_url : http://www.vvkee.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -91,16 +91,14 @@ JB :
   comments :
     provider : duoshuo
     duoshuo :
-      short_name : xuhf
+      short_name : vvkee
 
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
   # Set 'provider' to false to turn analytics off globally.
   #
   analytics :
-    provider : baidu
-    baidu :
-      tracking_id : 'e6b22fb4d84f7d170fe849ee97b59ab7'
+    provider : cnzz
 
   # Settings for sharing helper.
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.
