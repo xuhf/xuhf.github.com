@@ -4,8 +4,7 @@
 			<h1>
 				{{ page.title }}{% if page.tagline %} <small>{{ page.tagline}}</small>{% endif %}
 			</h1>
-		</header>
-		<section>{% include widgets/meituan %}</section>
+		</header>		
 		<section>
 			<div class="post-extra">
 				<div class="pull-left">
@@ -13,6 +12,9 @@
 				</div>
 				<div class="pull-right">{% include widgets/share_buttons %}</div>
 			</div>
+            <div class="post-extra">
+              {% include widgets/meituan %}
+            </div>
 			{{ content }} {% if page.license != false %}
 			<footer>
 				<p>
