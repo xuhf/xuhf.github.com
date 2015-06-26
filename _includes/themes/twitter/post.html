@@ -1,57 +1,51 @@
 <section id="content">
-	<article class="post">
-		<header>
-			<h1>
+    <article class="post">
+        <header>
+            <h1>
 				{{ page.title }}{% if page.tagline %} <small>{{ page.tagline}}</small>{% endif %}
 			</h1>
-		</header>		
-		<section>
-			<div class="post-extra">
-				<div class="pull-left">
-					<span>{{ page.date | date:"%Y-%m-%d" }}</span>
-				</div>
-				<div class="pull-right">{% include widgets/share_buttons %}</div>
-			</div>
+        </header>
+        <section>
             <div class="post-extra">
-              {% include widgets/meituan %}
+                <div class="pull-left">
+                    <span>{{ page.date | date:"%Y-%m-%d" }}</span>
+                </div>
+                <div class="pull-right">{% include widgets/share_buttons %}</div>
             </div>
-			{{ content }} {% if page.license != false %}
-			<footer>
-				<p>
-					本文由 <a href="mailto:{{ site.author.email }}">{{site.author.name }}</a> 创作，转载请注明原文链接。
-				</p>
-			</footer>
-			{% endif %}
-		</section>
-
-	</article>
+            <div class="post-extra">
+                <iframe frameborder="0" id="mtcontent" scrolling="no" style="width:650px;height:100px;" src="http://x.union.meituan.com/search?type=99&width=405&logo=1&keyword=1&source=15f20bdcabd6af37fcf783a58c16f43e422&callback=1"></iframe>
+            </div>
+            {{ content }} {% if page.license != false %}
+            <footer>
+                <p>
+                    本文由 <a href="mailto:{{ site.author.email }}">{{site.author.name }}</a> 创作，转载请注明原文链接。
+                </p>
+            </footer>
+            {% endif %}
+        </section>
+    </article>
 </section>
 <section>
-	{% unless page.categories == empty %}
-	<ul class="tag-box inline">
-		<li><i class="icon-large icon-folder-open"></i></li> {% assign
-		categories_list = page.categories %} {% include JB/categories_list %}
-	</ul>
-	{% endunless %} {% unless page.tags == empty %}
-	<ul class="tag-box inline">
-		<li><i class="icon-large icon-tags"></i></li> {% assign tags_list =
-		page.tags %} {% include JB/tags_list %}
-	</ul>
-	{% endunless %}
-	<div class="pagination">
-		<ul>
-			{% if page.previous %}
-			<li class="prev"><a
-				href="{{ BASE_PATH }}{{ page.previous.url }}"
-				title="{{ page.previous.title }}">&larr; 上一篇</a></li> {% else %}
-			<li class="prev disabled"><a>&larr; 上一篇</a></li> {% endif %}
-			<li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">文章列表</a></li>
-			{% if page.next %}
-			<li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}"
-				title="{{ page.next.title }}">下一篇 &rarr;</a></li> {% else %}
-			<li class="next disabled"><a>下一篇 &rarr;</a></li> {% endif %}
-		</ul>
-	</div>
+    {% unless page.categories == empty %}
+    <ul class="tag-box inline">
+        <li><i class="icon-large icon-folder-open"></i></li> {% assign categories_list = page.categories %} {% include JB/categories_list %}
+    </ul>
+    {% endunless %} {% unless page.tags == empty %}
+    <ul class="tag-box inline">
+        <li><i class="icon-large icon-tags"></i></li> {% assign tags_list = page.tags %} {% include JB/tags_list %}
+    </ul>
+    {% endunless %}
+    <div class="pagination">
+        <ul>
+            {% if page.previous %}
+            <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; 上一篇</a></li> {% else %}
+            <li class="prev disabled"><a>&larr; 上一篇</a></li> {% endif %}
+            <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">文章列表</a></li>
+            {% if page.next %}
+            <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">下一篇 &rarr;</a></li> {% else %}
+            <li class="next disabled"><a>下一篇 &rarr;</a></li> {% endif %}
+        </ul>
+    </div>
 </section>
 <section>{% include widgets/ujian_list %}</section>
 <section id="comments">{% include JB/comments %}</section>
