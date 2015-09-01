@@ -2,9 +2,10 @@
 layout : post
 title : "git查看某个文件的修改历史"
 category : "Git"
-keywords : git
 tags : [git]
 ---
+
+## 开始
 
 有的时候，我们需要查看文件的某些改动，某一个修改都修改了哪些文件。
 
@@ -14,7 +15,7 @@ tags : [git]
 
 显示文件的每一行是在哪个版本最后修改
 
-```
+```sh
 $ git blame README.md
 
 e130233b (vvkee 2015-04-21 19:20:13 +0800 1) ## 项目简介
@@ -28,8 +29,9 @@ e130233b (vvkee 2015-04-21 19:20:13 +0800 3) vvkee的个人博客
 
 显示文件的每个版本提交信息。
 
-```
+```sh
 $ git whatchanged README.md
+
 commit 6c40c0df95b929da59da645ffde0a33f54ff6a3f
 Author: xx <xx@xx.com>
 Date:   Thu May 14 14:08:46 2015 +0800
@@ -59,8 +61,9 @@ Date:   Tue Apr 14 22:44:47 2015 +0800
 
 可以列出文件的所有改动历史，注意，这是对于一个文件来说的。
 
-```
+```sh
 $ git log --pretty=oneline README.md
+
 6c40c0df95b929da59da645ffde0a33f54ff6a3f modify domain
 e130233b2eb3d786b7bc36eb90f9560ae751fda9 修改分享，删除无用代码
 28a840a5913c1adbf97d25840ad591e85529cd80 first commit
@@ -72,8 +75,9 @@ e130233b2eb3d786b7bc36eb90f9560ae751fda9 修改分享，删除无用代码
 
 这个命令和 **git log -p 版本号**一样
 
-```
+```sh
 $ git show 6c40c0df95b929da59da645ffde0a33f54ff6a3f
+
 commit 6c40c0df95b929da59da645ffde0a33f54ff6a3f
 Author: xx <xx@xx.com>
 Date:   Thu May 14 14:08:46 2015 +0800
