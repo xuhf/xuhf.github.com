@@ -1,7 +1,7 @@
 ---
 layout : post
 title : "Mac开发配置手册"
-category : "Mac配置"
+category : "Mac"
 tags : [mac,配置]
 ---
 
