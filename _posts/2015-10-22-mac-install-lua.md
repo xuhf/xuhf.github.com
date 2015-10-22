@@ -3,6 +3,7 @@ layout : post
 title : "Mac下安装Lua 5.3"
 category : "Mac"
 tags : [Mac,lua]
+---
 
 ## install
 
