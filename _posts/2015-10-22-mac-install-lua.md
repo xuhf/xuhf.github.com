@@ -42,3 +42,7 @@ sudo make install
 lua -v ## 查看lua版本
 which lua ## 查看lua的安装目录
 ```
+
+6，使用sublime text 开发
+
+可以去网上查找关于在sublime text中编译lua。
