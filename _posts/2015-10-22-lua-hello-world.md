@@ -1,8 +1,9 @@
 ---
 layout : post
 title : "Lua入门"
-category : "Mac"
-tags : [Mac,lua]
+category : "Lua"
+tags : [lua]
+published: false
 ---
 
 ## 数据类型

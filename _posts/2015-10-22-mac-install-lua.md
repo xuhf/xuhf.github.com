@@ -1,7 +1,7 @@
 ---
 layout : post
 title : "Mac下安装Lua 5.3"
-category : "Mac"
+category : "Lua"
 tags : [Mac,lua]
 ---
 
