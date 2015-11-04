@@ -1,11 +1,11 @@
 ---
 layout : post
-title : "Linux中cronolog的使用"
+title : "使用cronolog分割tomcat的日志文件"
 category : "Linux"
 tags : [tools]
 ---
 
-## 安装cronolog
+## 安装
 
 1，<a target='_blank' href='http://download.csdn.net/detail/xuhf_1988/9233029'>下载cronolog</a>
 
@@ -18,7 +18,7 @@ sudo make
 sudo make install
 ```
 
-安装完成后，使用`which cronolog`查看
+安装完成后，使用`which cronolog`查看，显示出
 
 ```sh
 /usr/local/sbin/cronolog
@@ -62,7 +62,7 @@ touch "$CATALINA_OUT"
 
 将
 
-```
+```sh
 # 383，384行
 org.apache.catalina.startup.Bootstrap "$@" start \
 >> "$CATALINA_OUT" 2>&1 "&"
