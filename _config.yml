@@ -83,6 +83,7 @@ JB :
   rss_path : /rss.xml
   messages_path : /messages.html
   about_path : /about.html
+  books_path : /books.html
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
