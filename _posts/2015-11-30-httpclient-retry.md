@@ -3,6 +3,7 @@ layout : post
 title : " HttpClient的重试机制"
 category : "java"
 tags : [httpclient]
+published: false
 ---
 
 ## 需求分析
