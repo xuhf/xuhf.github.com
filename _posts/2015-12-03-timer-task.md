@@ -3,7 +3,6 @@ layout : post
 title : "Java中实现定时任务的几种方式"
 category : "java"
 tags : [java]
-published: false
 ---
 
 ##
@@ -53,6 +52,7 @@ public static void quartz() throws Exception {
     scheduler.start();
 }
 
+// 具体的定时任务需要实现Job接口
 public static class PrintTimeJob implements Job {
 
     public void execute(JobExecutionContext context) throws JobExecutionException {
@@ -83,7 +83,11 @@ public static class PrintTimeJob implements Job {
 
 ## Spring quartz
 
+正在整理
+
 ## Spring task
+
+正在整理
 
 ## Linux的crontab
 
@@ -92,6 +96,8 @@ public static class PrintTimeJob implements Job {
 具体的实现方式就是真正的任务类和普通的类没有什么区别。
 
 1, 创建一个task类
+
+所谓的Task类，就仅仅是包含一个main方法的类。
 
 ```java
 public class PrintTimeTask {
@@ -106,8 +112,31 @@ public class PrintTimeTask {
 
 2, 将需要执行的task项目打成一个jar包
 
-在项目中，我们经常会依赖各种第三方组件的jar包。
+在项目中，我们经常会依赖各种第三方组件的jar包，那么如何使用这些依赖呢?
+
+这就需要借助shell脚本了，我们将需要的jar放到统一的一个目录下，例如`/opt/app/lib`下。
+
+使用shell脚本将所依赖的jar都找出来，加入到CLASSPATH中。
 
 3, 编写一个shell脚本
 
+PrintTimeTask.sh
+
+```sh
+#!/bin/sh
+
+CLASSPATH=`find /opt/app/lib -name \*.jar|xargs|sed "s/ /:/g"`
+export CLASSPATH=.:$CLASSPATH
+export LANG="en_US.UTF-8"
+
+cd /opt/app/lib
+java test.PrintTimeTask > /opt/app/log/PrintTimeTask.log 2>&1
+```
+
 4, 将shell脚本加入到crontab中
+
+```sh
+crontab -l
+## 编辑crontab定时任务
+crontab -e
+```
