@@ -3,7 +3,6 @@ layout : post
 title : "Java中实现定时任务的几种方式"
 category : "java"
 tags : [java]
-published: false
 ---
 
 ##
@@ -53,6 +52,7 @@ public static void quartz() throws Exception {
     scheduler.start();
 }
 
+// 具体的定时任务需要实现Job接口
 public static class PrintTimeJob implements Job {
 
     public void execute(JobExecutionContext context) throws JobExecutionException {
@@ -83,7 +83,11 @@ public static class PrintTimeJob implements Job {
 
 ## Spring quartz
 
+正在整理
+
 ## Spring task
+
+正在整理
 
 ## Linux的crontab
 
@@ -104,6 +108,8 @@ public static class PrintTimeJob implements Job {
 `/opt/app/log` 下我们用来存放定时程序产生的日志文件
 
 1, 创建一个task类
+
+所谓的Task类，就仅仅是包含一个main方法的类。
 
 ```java
 public class PrintTimeTask {
