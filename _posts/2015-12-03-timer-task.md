@@ -192,7 +192,7 @@ else
 fi
 ```
 
-赋予`printTimeTask.sh`执行脚本
+赋予`printTimeTask.sh`执行权限
 
 ```sh
 chmod a+x printTimeTask.sh
