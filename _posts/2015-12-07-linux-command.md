@@ -34,3 +34,5 @@ dirname $file
 dirname $dir_name
 # /opt
 ```
+
+## Date命令
