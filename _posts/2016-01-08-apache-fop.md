@@ -48,5 +48,7 @@ Apache FOP项目的目标是传递一个XSL-FOD到PDF的格式，至少兼容从
 FOP项目将尝试使用不断发展的规范的最新版本。
 
 伯乐在线地址：<http://hao.jobbole.com/?p=9957>
+
 官方网站：<http://xmlgraphics.apache.org/fop/>
+
 开源地址：<http://svn.apache.org/repos/asf/xmlgraphics/fop/>
