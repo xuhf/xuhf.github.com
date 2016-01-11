@@ -67,14 +67,12 @@ public class Demo {
             }
         } catch (Exception e) {
             e.printStackTrace();
-            logger.error("视频加入线程池出错:" + e.getMessage());
             threadPool.shutdown();
         }
 
         // 等待所有任务执行完成
         while (threadPool.getActiveCount() > 0) {
             logger.debug("active thread count =  " + threadPool.getActiveCount());
-            // 还有会员未处理完毕，等待一段时间
             try {
                 Thread.sleep(taskSleepTime);
             } catch (InterruptedException e) {
