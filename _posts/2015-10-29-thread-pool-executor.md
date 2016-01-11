@@ -1,9 +1,8 @@
 ---
 layout : post
-title : "ThreadPoolExecutor运转机制"
+title : "ThreadPoolExecutor入门"
 category : "Java"
 tags : [Java]
-published: false
 ---
 
 
@@ -32,12 +31,83 @@ published: false
 5. workQueue： 线程池所使用的缓冲队列
 6. handler： 线程池对拒绝任务的处理策略
 
-## 运行机制
-
-任务通过ex
-
 ## 代码示例
 
+```java
+public class Demo {
 
+    private static Log logger = LogFactory.getLog(Demo.class);
+
+    // 休眠时间
+    private static int taskSleepTime = 200;
+
+    // 队列最大个数
+    private static int maxTaskQueueSize = 10;
+
+    public static void main(String[] args) {
+        // 构造一个线程池
+        ThreadPoolExecutor threadPool = new ThreadPoolExecutor(5, 10, 10, TimeUnit.SECONDS,
+                new ArrayBlockingQueue<Runnable>(maxTaskQueueSize), new ThreadPoolExecutor.DiscardOldestPolicy());
+
+        try {
+            for (int i = 0; i < 100;) {
+                // 获取当前任务队列大小
+                int currentQueueSize = threadPool.getQueue().size();
+                logger.info("currentQueueSize =  " + currentQueueSize);
+                System.out.println("currentQueueSize = " + currentQueueSize);
+                System.out.println("no loop now i is " + i);
+                if (currentQueueSize < maxTaskQueueSize) {
+                    System.out.println("now i is " + i);
+                    threadPool.execute(new ThreadPoolMessageSendTask(i));
+                    i++;
+                } else {
+                    System.out.println("Thread is sleep");
+                    Thread.sleep(taskSleepTime);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            logger.error("视频加入线程池出错:" + e.getMessage());
+            threadPool.shutdown();
+        }
+
+        // 等待所有任务执行完成
+        while (threadPool.getActiveCount() > 0) {
+            logger.debug("active thread count =  " + threadPool.getActiveCount());
+            // 还有会员未处理完毕，等待一段时间
+            try {
+                Thread.sleep(taskSleepTime);
+            } catch (InterruptedException e) {
+                logger.error("主线程休眠失败:" + e.getMessage(), e);
+            }
+        }
+
+        // 任务执行完毕，关闭线程池
+        threadPool.shutdown();
+    }
+
+    static class ThreadPoolMessageSendTask implements Runnable, Serializable {
+
+        private static final long serialVersionUID = 7668409698027485662L;
+
+        private int message;
+
+        ThreadPoolMessageSendTask(int message) {
+            this.message = message;
+        }
+
+        @Override
+        public void run() {
+            System.out.println("params is " + message);
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+    }
+}
+```
 
 <http://blog.csdn.net/cutesource/article/details/6061229>
