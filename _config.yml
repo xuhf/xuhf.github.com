@@ -1,10 +1,10 @@
 # This is the default format.
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: /:categories/:year/:month/:day/:title
+permalink: /:categories/:year/:month/:day/:title.html
 
 safe: false
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 paginate: 10
 encoding: utf-8
@@ -13,8 +13,8 @@ gems: [jekyll-paginate]
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : 三胖子的个人博客
-tagline: to be continue.
+title : vvkee | 走在路上 | 追求卓越
+tagline: To Be Continue.
 author :
   name : vvkee
   email : xuhf_1988@163.com
