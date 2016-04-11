@@ -8,9 +8,15 @@ auto: true
 paginate: 10
 encoding: utf-8
 pygments: true
-markdown: kramdown
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data", "tables"]
+#markdown: redcarpet
+#redcarpet:
+#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data", "tables"]
+
+markdown:    kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+incremental: false
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
