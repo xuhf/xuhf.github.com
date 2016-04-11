@@ -1,7 +1,7 @@
 ---
 layout : post
 title : "Web应用接口开发签名方式"
-category : "Java"
+category : "java"
 tags : [签名, 接口]
 ---
 
@@ -185,5 +185,3 @@ public class SignDemo {
 
 <http://www.oicto.com/web-api-sign-key-a/>
 <http://www.oicto.com/web-api-sign-key-b/>
-
-

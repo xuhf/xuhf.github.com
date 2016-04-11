@@ -1,8 +1,8 @@
 ---
 layout : post
 title : "ThreadPoolExecutor入门"
-category : "Java"
-tags : [Java]
+category : "java"
+tags : [java]
 ---
 
 

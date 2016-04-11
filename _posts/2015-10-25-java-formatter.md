@@ -1,7 +1,7 @@
 ---
 layout : post
 title : "Java关于数值、货币值、百分数的格式化"
-category : "Java"
+category : "java"
 tags : [java,formatter]
 ---
 
