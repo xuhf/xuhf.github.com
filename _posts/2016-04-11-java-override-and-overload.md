@@ -50,6 +50,7 @@ Java允许在一个类中，多个方法有用相同的名字，但是必须有�
 最典型的方法重载：
 
 ```java
+
 class P {
 
   private int a(int b) {
