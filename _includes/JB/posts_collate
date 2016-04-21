@@ -40,7 +40,7 @@ Usage:
       {% if this_year != next_year %}
         </ul>
         <h2>{{next_year}}年</h2>
-        <h3 id="{{next_month}}-{{next_year}}">{{next_month}}</h3>
+        <h3 id="{{next_month}}-{{next_year}}">{{next_month}}月</h3>
         <ul>
       {% else %}
         {% if this_month != next_month %}

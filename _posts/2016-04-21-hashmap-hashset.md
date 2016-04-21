@@ -166,9 +166,7 @@ void resize(int newCapacity) {
 
 ## HashSet实现原理
 
-`ctrl+shift+t`打开JDK的`HashSet`源码
-
-就会发现，HashSet的实现方式就是使用了HashMap。
+打开`HashSet`源码，就会发现，HashSet的就是使用HashMap实现的。
 
 ```java
 public HashSet() {
@@ -189,5 +187,7 @@ public boolean add(E e) {
 ## 参考链接
 
 <http://blog.csdn.net/vking_wang/article/details/14166593>
+
 <http://www.importnew.com/7099.html>
+
 <http://www.importnew.com/19208.html>
