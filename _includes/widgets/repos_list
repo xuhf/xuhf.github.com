@@ -1,5 +1,6 @@
 <a href="#"><i class="icon-fixed-width icon-code"></i> 代码仓库</a>
 <ul>
-  <li><a href="https://github.com/xuhf/framework">Base Framework</a></li>
-  <li><a href="https://github.com/xuhf/structure">数据结构学习代码</a></li>
+  <li><a href="https://github.com/xuhf/framework" target="_blank">Base Framework</a></li>
+  <li><a href="https://github.com/xuhf/structure" target="_blank">数据结构学习代码</a></li>
+  <li><a href="https://github.com/xuhf/jutils" target="_blank">Java工具集</a></li>
 </ul>
