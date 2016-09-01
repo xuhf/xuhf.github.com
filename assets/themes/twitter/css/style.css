@@ -71,7 +71,7 @@ a:hover, a:active { outline: none; }
 
 /*  Main  */
 #wrap {
-  width: 90%;
+  width: 80%;
   margin: 20px auto;
 }
 
@@ -692,7 +692,7 @@ pre code {
 #back-top {
   position: fixed;
   bottom: 30px;
-  margin-left: 1040px;
+  margin-left: 81%;
 }
 #back-top a {
   width: 54px;
