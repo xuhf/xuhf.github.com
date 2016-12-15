@@ -82,6 +82,7 @@ JB :
   messages_path : /messages.html
   about_path : /about.html
   books_path : /books.html
+  resumes_path : /resumes.html
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
