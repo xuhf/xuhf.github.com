@@ -7,6 +7,8 @@ comments: false
 ---
 {% include JB/setup %}
 
+## 简介
+
   1. 程序员
   2. 85后
   3. 已婚
@@ -50,4 +52,3 @@ comments: false
 
 想在编程之路上走的更远的孩子
 
-<p><img style="width:98%" src="http://isharec.qiniudn.com/100559285.jpg" alt="Coding For Fun"></p>
