@@ -19,10 +19,9 @@ published: false
 
 对于api中参数的加密,我们就需要使用一个可逆算法,将加密后的数据解密回来,方便我们处理.
 
-## 不可逆加密
-
-
 ## 对称式加密算法
+
+## 不可逆加密
 
 <http://www.iteye.com/topic/1122076/>
 <http://security.group.iteye.com/group/wiki/1710-one-way-encryption-algorithm>
