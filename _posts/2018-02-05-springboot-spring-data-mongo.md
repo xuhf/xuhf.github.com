@@ -3,7 +3,6 @@ layout : post
 title : "在SpringBoot中使用SpringDataMongo操作mongo数据库"
 category : "java"
 tags : [springboot]
-published: false
 ---
 
 SpringBoot版本
