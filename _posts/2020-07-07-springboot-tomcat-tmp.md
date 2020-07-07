@@ -35,7 +35,7 @@ server.tomcat.basedir=自定义路径
 MultipartConfigElement multipartConfigElement() {
     String tempPath = "自定义路径";
     MultipartConfigFactory factory = new MultipartConfigFactory();
-    factory.setLocation(tempPath);
-    return factory.createMultipartConfig();
+    factory.setLocation(tempPath);
+    return factory.createMultipartConfig();
 }
 ```
