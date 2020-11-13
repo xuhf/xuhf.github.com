@@ -6,7 +6,7 @@ group: navigation
 comments: false
 ---
 
-## 2018年书单
+## 2020年书单
 
 ### 技术类
 - [ ] 大话数据结构

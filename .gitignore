@@ -10,3 +10,6 @@ Thumbs.db
 
 .rbenv-version
 .rvmrc
+
+.idea
+._.DS_Store
