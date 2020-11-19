@@ -5,7 +5,7 @@ category : "CentOS"
 tags : [centos,mysql]
 ---
 
-# MySQL安装（yum方式）
+## Yum方式安装
 
 ## 卸载CentOS自带MySQL
 
@@ -125,9 +125,9 @@ chkconfig --add mysqld
 chkconfig mysqld on
 ```
 
+---------
 
-
-# MySQL安装rpm包方式
+## rpm包形式安装
 
 **需要注意，这些命令全部在root用户下执行。**
 
