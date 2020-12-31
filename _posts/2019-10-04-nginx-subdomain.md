@@ -3,7 +3,6 @@ layout : post
 title : "Nginx配置二级域名"
 category : "工具"
 tags : [Nginx,域名]
-published: false
 ---
 
 ## 需求描述
