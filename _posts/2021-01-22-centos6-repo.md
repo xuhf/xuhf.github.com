@@ -22,7 +22,7 @@ cd /etc/yum.repos.d
 rm -rf "*.repo"
 ```
 
-编辑`Centos-6-Vault-Aliyun.repo`
+新增`Centos-6-Vault-Aliyun.repo`文件，内容如下：
 
 ```
 # CentOS-Base.repo
